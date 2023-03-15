@@ -167,7 +167,7 @@
             <h4>Rp.16.000.000</h4>
             </div>
           <div class="col-3 col-lg-1">
-           <h4>%25</h4>
+           <h4>%75</h4>
           </div>
         </div>
         <div class="row">
@@ -192,17 +192,18 @@
               <div class="code-tabs">
                 <ul class="nav nav-tabs"></ul>
                 <div class="tab-content">
-                  <div class="tab-pane" title="first">
+                  <div class="tab-pane" title="Reviewer 1">
                     <p id="describe_reviewer">
                       This is first tab 
                     </p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga voluptatibus dignissimos quam laudantium ex.</p>
                     <div class="row">
                       <p>Review UMKM: ⭐⭐⭐⭐4/5 </p>
                     </div>
                   
                   </div>
-                  <div class="tab-pane" title="second">this is second tab</div>
-                  <div class="tab-pane" title="third">this is third tab</div>
+                  <div class="tab-pane" title="Reviewer 2">this is second tab</div>
+                  <div class="tab-pane" title="Reviewer 3">this is third tab</div>
                 </div>
               </div>
               <hr>
@@ -406,13 +407,16 @@
                 </tbody>
               </table>
               <hr>
-              <h5 id="image">Image</h5>
+              <h5 id="image">Gallery UMKM</h5>
               <p>
                 <img loading="lazy" decoding="async" class="w-100 d-block mb-4" src="images/blog/post-4.jpg"
                   alt="placeholder image">
                 <img loading="lazy" decoding="async" class="w-100 d-block mb-4"
-                  src="https://dummyimage.com/1100x500/e8e8e8/16161a.jpg" alt="placeholder image">
-              </p>
+                  src="images/blog/post-3.jpg" alt="placeholder image">
+                  <img loading="lazy" decoding="async" class="w-100 d-block mb-4"
+                  src="https://dummyimage.com/1100x500/e8e8e8/161a.jpg" alt="placeholder image">
+              
+                </p>
               <hr>
               <h5 id="youtube-video">Youtube video</h5>
               <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
@@ -431,8 +435,8 @@
                 <form>
                   <h4>Beri Modal Untuk UMKM</h4>
                   <div class="mb-3">
-                    <label for="price_pay" class="form-label">Modalkan</label>
-                    <input type="number" class="form-control" id="price_pay" aria-describedby="price_pay" min="100000" value="100000" step="10000">
+                    <label for="price_pay_umkm" class="form-label">Modalkan</label>
+                    <input type="number" class="form-control" onchange="getValeuFromPay()" id="price_pay_umkm" aria-describedby="price_pay_umkm" min="100000" value="100000" step="10000">
                     <div id="prices" class="form-text">Tentukan jumlah dana yang ingin dibantu</div>
                   </div>
 
@@ -440,7 +444,7 @@
                     <p>Biaya yang akan dibayarkan:</p>
                   </div>
                   
-                  <h4>Rp. 100.000</h4>
+                  <h4 class="price_from_pay">Rp. 100.000</h4>
 
                   <div class="mb-3">
                     <label for="exampleInputPassword1" class="form-label">Signature</label>
