@@ -128,11 +128,10 @@ function formatRupiah(angka, prefix){
 // getvaleu from input
 
 function getValeuFromPay() {
-  var getInputPayUMKM = document.querySelector("#price_pay_umkm").value
-  
+  var getInputPayUMKM = document.querySelector("#price_pay_umkm").value 
   var getPriceFromInput = document.querySelector(".price_from_pay");
   var valueToRupiah = formatRupiah(getInputPayUMKM, 'Rp. ')
-  getPriceFromInput.innerHTML = valueToRupiah;
+  getPriceFromInput.innerHTML = valueToRupiah
   
 
   console.log(getInputPayUMKM);
