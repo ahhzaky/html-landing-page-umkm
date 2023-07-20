@@ -51,27 +51,27 @@
 			</button>
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
 				<ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-					<li class="nav-item active"> <a class="nav-link" href="index.html">Home</a>
+					<li class="nav-item "> <a class="nav-link" href="index.html">Home</a>
 					</li>
 					<li class="nav-item "> <a class="nav-link" href="about.html">Tentang</a>
 					</li>
 					<li class="nav-item "> <a class="nav-link" href="how-it-works.html">Bagaimana Kami Kerja</a>
 					</li>
-					<li class="nav-item "> <a class="nav-link" href="blog.html">UMKM</a>
+					<li class="nav-item "> <a class="nav-link" href="list-campaign.html">UMKM</a>
 					</li>
 					<li class="nav-item "> <a class="nav-link" href="contact.html">Kontak Admin</a>
 					</li>
 					<li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Pages</a>
 						<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-							<li><a class="dropdown-item " href="blog.html">Daftar UMKM Anda</a>
+							<li><a class="dropdown-item " href="services.html">Service Details</a>
 							</li>
-              <li><a class="dropdown-item " href="blog.html">Daftar Konsultan</a>
+              <li><a class="dropdown-item " href="req-campaign.html">Daftar UMKM Anda</a>
 							</li>
-							<li><a class="dropdown-item " href="blog.html">Detail UMKM</a>
+              <li><a class="dropdown-item " href="req-konsultan.html">Daftar Konsultan</a>
 							</li>
-							<li><a class="dropdown-item " href="service-details.html">Service Details</a>
-							</li>
-              <li><a class="dropdown-item " href="privacy-policy.html">Gabung Bersama Kami</a>
+              <li><a class="dropdown-item " href="services.html">Detail UMKM</a>
+              </li>
+              <li><a class="dropdown-item " href="req-admin.html">Gabung Bersama Kami</a>
 							</li>
 							<li><a class="dropdown-item " href="terms.html">Syarat &amp; Ketentuan</a>
 							</li>
@@ -432,7 +432,7 @@
             <div class="card-body payment m-5">
               <div class="container">
                 <form>
-                  <h4>Beri Modal Untuk UMKM</h4>
+                  <h4 id="donate">Beri Modal Untuk UMKM</h4>
                   <div class="mb-3">
                     <label for="price_pay_umkm" class="form-label">Modalkan</label>
                     <input type="number" class="form-control" onchange="getValeuFromPay()" id="price_pay_umkm" aria-describedby="price_pay_umkm" min="50000" value="50000" step="10000">
@@ -475,13 +475,13 @@
 				<div class="footer-widget">
 					<h5 class="mb-4 text-primary font-secondary">Service</h5>
 					<ul class="list-unstyled">
-						<li class="mb-2"><a href="service-details.html">Buat permodalan UMKM</a>
+						<li class="mb-2"><a href="req-campaign.html">Buat permodalan UMKM</a>
 						</li>
-						<li class="mb-2"><a href="service-details.html">Gabung Bersama Kami</a>
+						<li class="mb-2"><a href="req-konsultan.html">Gabung Konsultan UMKM</a>
 						</li>
-						<li class="mb-2"><a href="service-details.html">Gabung Reviewer UMKM</a>
+            <li class="mb-2"><a href="req-admin.html">Gabung Bersama Kami</a>
 						</li>
-						<li class="mb-2"><a href="service-details.html">Ketentuan dan Legalitas</a>
+						<li class="mb-2"><a href="terms.html">Ketentuan dan Legalitas</a>
 						</li>
 					</ul>
 				</div>
@@ -490,11 +490,11 @@
 				<div class="footer-widget">
 					<h5 class="mb-4 text-primary font-secondary">Tentang</h5>
 					<ul class="list-unstyled">
-						<li class="mb-2"><a href="#!">Benefit</a>
+						<li class="mb-2"><a href="how-it-works.html#benefit">Benefit</a>
 						</li>
-						<li class="mb-2"><a href="#!">Cerita CRWD</a>
+						<li class="mb-2"><a href="how-it-works.html">Cerita CRWD</a>
 						</li>
-						<li class="mb-2"><a href="#!">Team</a>
+						<li class="mb-2"><a href="about.html#team">Team</a>
 						</li>
 					</ul>
 				</div>
@@ -546,7 +546,6 @@
 	</div>
 </footer>
 <!-- End Footer -->
-
 <!-- wa status -->
 <a href="https://api.whatsapp.com/send?phone=813678221&text=Hallo,%20Apa%20benar%20ini%20dengan%20UMKM%20Batik%20Indonesia?" class="whatsapp" target="_blank">
   <i class="fa fa-whatsapp my-float"></i>
